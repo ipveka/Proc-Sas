@@ -1,4 +1,3 @@
-
 ### RESET table:
 Proc.reg.reset <- function(lm){
    a <- resettest(lm,power=2,type="regressor")

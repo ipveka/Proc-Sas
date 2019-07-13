@@ -1,4 +1,3 @@
-
 ### Proc.reg.confint(lm)
 Proc.reg.confint <- function(lm){
    t1 <- as.data.frame(confint(lm))

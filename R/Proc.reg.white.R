@@ -1,4 +1,3 @@
-
 ### WHITE table:
 Proc.reg.white <- function(lm){
    a <- lm

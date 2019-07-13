@@ -1,4 +1,3 @@
-
 ### DURBIN table:
 Proc.reg.durbin <- function(lm){
    b <- dwtest(lm)
