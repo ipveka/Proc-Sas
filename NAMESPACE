@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+import(DT)
+import(lmtest)
+import(mctest)
+import(lm.beta)
+import(visreg)
+
