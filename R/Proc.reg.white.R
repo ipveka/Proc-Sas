@@ -2,7 +2,7 @@
 ### WHITE table:
 Proc.reg.white <- function(lm){
    a <- lm
-   data <- df
+   data <- a$model
    u2 <- a$residuals^2
    y <- fitted(a)
    Ru2<- summary(lm(u2 ~ y + I(y^2)))$r.squared
