@@ -1,4 +1,6 @@
+
 # Proc.reg.shiny
+
 Proc.reg.shiny <- function(){
 
    appDir <- system.file("Shiny", "myapp", package = "Proc.reg")
