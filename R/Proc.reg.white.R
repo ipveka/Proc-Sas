@@ -1,4 +1,6 @@
+
 ### WHITE table:
+
 Proc.reg.white <- function(lm){
    a <- lm
    data <- a$model
@@ -14,3 +16,4 @@ Proc.reg.white <- function(lm){
                 list(className = "dt-center", targets = "_all")
              )))
 }
+
