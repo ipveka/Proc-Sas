@@ -1,4 +1,6 @@
+
 ### Proc.anova(lm)
+
 Proc.reg.anova <- function(lm){
    a <- anova(lm)
    a$coefficients
