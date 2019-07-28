@@ -12,3 +12,4 @@ Proc.reg.pagan <- function(lm){
                 list(className = "dt-center", targets = "_all")
              )))
 }
+
