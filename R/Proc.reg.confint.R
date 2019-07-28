@@ -14,3 +14,4 @@ Proc.reg.confint <- function(lm){
                   )))
    return(t)
 }
+
