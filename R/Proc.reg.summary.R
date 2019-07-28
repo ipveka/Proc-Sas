@@ -1,4 +1,6 @@
+
 ### Proc.summary
+
 Proc.reg.summary <- function(x){
    c <- data.frame(Statistic=c("Min.","1st Qu.","Median","Mean","3rd Qu.","Max."))
    for(i in 1:length(x)){
