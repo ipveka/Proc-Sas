@@ -18,3 +18,4 @@ Proc.reg.summary <- function(x){
                        )))
    return(output)
 }
+
