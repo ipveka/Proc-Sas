@@ -21,3 +21,4 @@ Proc.reg.reset <- function(lm){
                 list(className = "dt-center", targets = "_all")
              )))
 }
+
