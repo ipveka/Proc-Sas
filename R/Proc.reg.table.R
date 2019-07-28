@@ -18,3 +18,4 @@ Proc.reg.table <- function(lm){
                 list(className = "dt-center", targets = "_all")
              )))
 }
+
