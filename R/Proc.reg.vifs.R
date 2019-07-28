@@ -1,4 +1,6 @@
-### VIFS Analysis:
+
+### VIF Analysis:
+
 Proc.reg.vifs <- function(lm){
    ids <- unlist(lapply(lm$model, is.numeric))
    z <- lm$model[ , ids]
