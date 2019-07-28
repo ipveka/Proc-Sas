@@ -1,4 +1,6 @@
+
 ### Proc.content
+
 Proc.reg.content <- function(x){
    a <- data.frame(row.names = 1:length(x),
                    Name = substr(names(x), 1, 19),
