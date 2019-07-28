@@ -1,4 +1,6 @@
+
 ### DURBIN table:
+
 Proc.reg.durbin <- function(lm){
    b <- dwtest(lm)
    a1 <- b$statistic
