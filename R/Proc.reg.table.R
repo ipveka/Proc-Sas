@@ -1,4 +1,6 @@
+
 ### Proc.reg.table(lm)
+
 Proc.reg.table <- function(lm){
    a <- summary(lm)
    a$coefficients
