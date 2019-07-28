@@ -17,3 +17,4 @@ Proc.reg.anova <- function(lm){
                 list(className = "dt-center", targets = "_all")
              )))
 }
+
