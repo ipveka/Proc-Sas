@@ -8,3 +8,4 @@ Proc.reg.vifs <- function(lm){
    y <- z[,1]
    b <- mc.plot(x, y)
 }
+
