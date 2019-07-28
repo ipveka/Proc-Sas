@@ -1,4 +1,6 @@
+
 ### PAGAN table:
+
 Proc.reg.pagan <- function(lm){
    b <- bptest(lm)
    a1 <- b$statistic
