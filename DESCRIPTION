@@ -1,10 +1,10 @@
-Package: Proc.reg
+Package: Proc.sas
 Type: Package
 Title: Auxiliar functions for regression analysis
 Version: 0.1.0
 Author: Ignasi Pascual Vilaseca
 Maintainer: Ignasi Pascual Vilaseca <ignasi.pascual.vilaseca@gmail.com>
-Description: Auxiliar functions for regression analysis
+Description: Auxiliar functions for data and regression analysis, inspired by SAS procedures.
 Imports: DT, shiny,shinydashboard,markdown,caret,DT,lmtest,mctest,lm.beta,visreg
 License: MIT
 Encoding: UTF-8

@@ -1,0 +1,90 @@
+---
+title: "Report"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+params:
+  a: NA
+---
+
+```{r include=FALSE}
+
+library(Proc.reg)
+
+knitr::opts_chunk$set(
+	fig.align = "center",
+	message = FALSE,
+	comment = NA
+)
+
+df <- params$a
+
+```
+
+<style type="text/css">
+p {line-height: 2.5em;}
+h1.title {
+  font-size: 46px;
+  color: Black;
+  text-align: center;
+}
+h1.subtitle {
+  font-size: 20px;
+  color: Black;
+  text-align: center;
+}
+h4.author {
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: Black;
+  text-align: center;
+}
+h4.date {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: Black;
+  text-align: center;
+}
+</style>
+
+# Data
+
+## Content
+
+```{r}
+
+Proc.content(df)
+
+```
+
+## Summary
+
+```{r}
+
+Proc.summary(df)
+
+```
+
+# Graphics
+
+```{r}
+
+for(i in 1:length(df)){
+if(is.numeric(df[,i])){
+hist(df, col="gray16",type="p",ylab=names(df)[i],xlab="Index")
+}else{
+plot(df,col="gray16",type="p",ylab=names(df)[i],xlab="Index")
+}
+df <- df[,input$variable]
+if(is.numeric(df)){
+plot(df,col="gray16",type="p",ylab=names(df)[i],xlab="Index")
+}
+df <- df[,input$variable]
+if(is.numeric(df)){
+boxplot(df, col="gray16",ylab=names(df)[i],xlab="Index")
+}
+}
+
+```

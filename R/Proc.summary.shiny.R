@@ -1,8 +1,8 @@
 
-# Proc.reg.shiny
+# Proc.summary.shiny
 
-Proc.reg.shiny <- function(){
-   appDir <- system.file("Shiny", "myapp1", package = "Proc.sas")
+Proc.summary.shiny <- function(){
+   appDir <- system.file("Shiny", "myapp2", package = "Proc.sas")
    if (appDir == "") {
       stop("Could not find example directory. Try re-installing `mypackage`.", call. = FALSE)
    }
