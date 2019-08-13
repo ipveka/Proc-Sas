@@ -12,7 +12,7 @@ library("DT")
 
 ### Title:
 
-header <- dashboardHeader(title = "Data Summary")
+header <- dashboardHeader(title = "ShinySummary")
 
 ### SideBar:
 
@@ -21,14 +21,14 @@ sidebar <- dashboardSidebar(width = 230,
                             hr(),
 
                             sidebarMenu(
-                              menuItem("Import", tabName = "import", icon = icon("cog", lib = "glyphicon")),
-                              menuItem("Describe", tabName = "describe", icon = icon("cog", lib = "glyphicon")),
-                              menuItem("Visualize", tabName = "visualize", icon = icon("cog", lib = "glyphicon")),
+                              menuItem("Import", tabName = "import", icon = icon("cloud-upload", lib = "glyphicon")),
+                              menuItem("Describe", tabName = "describe", icon = icon("home", lib = "glyphicon")),
+                              menuItem("Visualize", tabName = "visualize", icon = icon("stats", lib = "glyphicon")),
                               menuItem("Report", tabName = "report", icon = icon("cloud-download", lib = "glyphicon")),
 
                               hr(),
 
-                              menuItem("About", tabName = "about", icon = icon("cog", lib = "glyphicon")),
+                              menuItem("About", tabName = "about", icon = icon("user")),
 
                               hr(),
 

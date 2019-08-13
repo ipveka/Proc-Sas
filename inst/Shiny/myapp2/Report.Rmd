@@ -11,7 +11,8 @@ params:
 
 ```{r include=FALSE}
 
-library(Proc.reg)
+library(Proc.sas)
+library(DT)
 
 knitr::opts_chunk$set(
 	fig.align = "center",
@@ -73,17 +74,11 @@ Proc.summary(df)
 
 for(i in 1:length(df)){
 if(is.numeric(df[,i])){
-hist(df, col="gray16",type="p",ylab=names(df)[i],xlab="Index")
+hist(df[,i], col="gray16",xlab=names(df)[i],ylab="",main="")
+plot(df[,i],col="gray16",xlab=names(df)[i],ylab="")
+boxplot(df[,i], col="gray16",ylab=names(df)[i],ylab="")
 }else{
-plot(df,col="gray16",type="p",ylab=names(df)[i],xlab="Index")
-}
-df <- df[,input$variable]
-if(is.numeric(df)){
-plot(df,col="gray16",type="p",ylab=names(df)[i],xlab="Index")
-}
-df <- df[,input$variable]
-if(is.numeric(df)){
-boxplot(df, col="gray16",ylab=names(df)[i],xlab="Index")
+plot(df[,i],col="gray16",xlab=names(df)[i],ylab="")
 }
 }
 

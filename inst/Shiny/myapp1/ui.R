@@ -13,7 +13,7 @@ library("DT")
 
 ### Title:
 
-header <- dashboardHeader(title = "Proc.reg")
+header <- dashboardHeader(title = "ShinyReg")
 
 ### SideBar:
 

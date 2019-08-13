@@ -78,24 +78,24 @@ server <- function(input, output) {
     df <- myData()
     df <- df[,input$variable]
     if(is.numeric(df)){
-      hist(df, col="gray16",type="p",ylab=input$variable,xlab="Index")
+      hist(df, col="gray16",xlab=input$variable,ylab="")
     }
     else{
-      plot(df,col="gray16",type="p",ylab=input$variable,xlab="Index")
+      plot(df,col="gray16",xlab=input$variable)
     }
   })
   output$plot2 <- renderPlot({
     df <- myData()
     df <- df[,input$variable]
     if(is.numeric(df)){
-      plot(df,col="gray16",type="p",ylab=input$variable,xlab="Index")
+      plot(df,col="gray16",xlab=input$variable,ylab="")
     }
   })
   output$plot3 <- renderPlot({
     df <- myData()
     df <- df[,input$variable]
     if(is.numeric(df)){
-      boxplot(df, col="gray16",ylab=input$variable,xlab="Index")
+      boxplot(df, col="gray16",xlab=input$variable)
     }
   })
 
