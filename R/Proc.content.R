@@ -1,4 +1,10 @@
 
+#' Content table
+#' @param x A data.frame() object
+#' @return returns a content table
+#' @examples
+#' Proc.content(df)
+
 ### Proc.content
 
 Proc.content <- function(x){
@@ -15,4 +21,4 @@ Proc.content <- function(x){
    return(b)
 }
 
-                                          
+

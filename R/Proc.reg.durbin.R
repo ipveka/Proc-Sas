@@ -1,5 +1,9 @@
 
-### DURBIN table:
+#' Summary table of Durbin test
+#' @param lm A lm() object
+#' @return returns a summary table of Durbin test
+#' @examples
+#' Proc.reg.durbin(lm)
 
 Proc.reg.durbin <- function(lm){
    b <- dwtest(lm)

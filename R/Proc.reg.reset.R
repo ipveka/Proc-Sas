@@ -1,4 +1,10 @@
 
+#' Summary table of the Reset test
+#' @param lm A lm() object
+#' @return returns a summary table of the Reset test
+#' @examples
+#' Proc.reg.reset(lm)
+
 ### RESET table:
 
 Proc.reg.reset <- function(lm){

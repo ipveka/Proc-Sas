@@ -1,5 +1,9 @@
 
-### Proc.reg.confint(lm)
+#' Summary table of a linear model
+#' @param lm A lm() object
+#' @return returns a summary table of the confidence intervals from the paraters calculated on a lineal model
+#' @examples
+#' Proc.reg.confint(lm)
 
 Proc.reg.confint <- function(lm){
    t1 <- as.data.frame(confint(lm))

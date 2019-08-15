@@ -1,5 +1,9 @@
 
-### Proc.summary
+#' Summary table of a dataset
+#' @param lm A data.frame() object
+#' @return returns a numeric and categoric summary table a dataset
+#' @examples
+#' Proc.summary(lm)
 
 Proc.summary <- function(x){
    c <- data.frame(Statistic=c("Min.","1st Qu.","Median","Mean","3rd Qu.","Max."))

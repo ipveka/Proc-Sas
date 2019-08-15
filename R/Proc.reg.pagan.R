@@ -1,5 +1,9 @@
 
-### PAGAN table:
+#' Summary table of Breusch-Pagan test
+#' @param lm A lm() object
+#' @return returns a summary table of Breusch-Pagan test
+#' @examples
+#' Proc.reg.pagan(lm)
 
 Proc.reg.pagan <- function(lm){
    b <- bptest(lm)

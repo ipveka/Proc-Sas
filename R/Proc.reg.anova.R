@@ -1,5 +1,9 @@
 
-### Proc.anova(lm)
+#' Summary table of Anova test
+#' @param lm A lm() object
+#' @return returns a summary table of Anova test
+#' @examples
+#' Proc.reg.anova(df)
 
 Proc.reg.anova <- function(lm){
    a <- anova(lm)

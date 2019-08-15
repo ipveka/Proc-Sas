@@ -1,5 +1,9 @@
 
-### WHITE table:
+#' Summary table of the White test
+#' @param lm A lm() object
+#' @return returns a summary table of the White test
+#' @examples
+#' Proc.reg.white(lm)
 
 Proc.reg.white <- function(lm){
    a <- lm

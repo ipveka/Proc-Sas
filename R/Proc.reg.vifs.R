@@ -1,5 +1,9 @@
 
-### VIF Analysis:
+#' Plot of Vifs from a linear model
+#' @param lm A lm() object
+#' @return  Returns a graphic of Vifs from a linear model
+#' @examples
+#' Proc.reg.vifs(lm)
 
 Proc.reg.vifs <- function(lm){
    ids <- unlist(lapply(lm$model, is.numeric))

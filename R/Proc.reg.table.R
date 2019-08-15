@@ -1,5 +1,9 @@
 
-### Proc.reg.table(lm)
+#' Summary table of a linear model
+#' @param lm A lm() object
+#' @return returns a summary table of a linear model
+#' @examples
+#' Proc.reg.table(lm)
 
 Proc.reg.table <- function(lm){
    a <- summary(lm)
