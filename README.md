@@ -1,5 +1,5 @@
 
-# Proc.reg
+# Proc.sas
 
 R Package with auxiliar functions for regression analysis
 
