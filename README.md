@@ -1,14 +1,20 @@
 
 # Proc.sas
 
+# Introduction
+
 R Package with auxiliar functions for regression analysis
 
-In development. Documentation in process.
+Actually in development
 
-Installation:
+# Installation:
 
 ``` {r}
 
 devtools::install_github("ipveka/Proc.sas")
 
 ```
+
+# Progress
+
+Documentation in process.
