@@ -16,5 +16,5 @@ returns a summary table of Anova test
 Summary table of Anova test
 }
 \examples{
-Proc.reg.anova(df)
+\dontrun{Proc.reg.anova(lm)}
 }

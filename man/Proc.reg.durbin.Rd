@@ -16,5 +16,5 @@ returns a summary table of Durbin test
 Summary table of Durbin test
 }
 \examples{
-Proc.reg.durbin(lm)
+\dontrun{Proc.reg.durbin(lm)}
 }

@@ -4,10 +4,10 @@ Title: Auxiliar functions for regression analysis
 Version: 0.1.0
 Author: Ignasi Pascual Vilaseca
 Maintainer: Ignasi Pascual Vilaseca <ignasi.pascual.vilaseca@gmail.com>
-Description: Auxiliar functions for data and regression analysis, inspired by SAS procedures. It contains two Shiny Apps, one for Data Analysis and one for Linear Modeling. It also includes two functions, used for creating reports from a data.frame or from a linear model.
-Imports: DT, shiny,shinydashboard,markdown,caret,lmtest,mctest,lm.beta,visreg
+Description: Auxiliar functions for data and regression analysis, inspired by SAS procedures.
+Imports: DT,dplyr,markdown,caret,lmtest,mctest,lm.beta,visreg
 License: MIT LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0

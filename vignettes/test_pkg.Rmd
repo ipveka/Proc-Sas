@@ -1,0 +1,143 @@
+---
+title: "test_pkg"
+author: "Ignasi Pascual Vilaseca"
+date: "15/11/2020"
+output: 
+  html_document:
+    theme: united
+    highlight: tango
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+
+# Aux 
+
+# devtools::document()
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(Proc.sas)
+
+# Aux functions
+
+library(pacman)
+
+pacman::p_load(DT,dplyr,markdown,caret,lmtest,mctest,lm.beta,visreg)
+
+```
+
+# Testing functions
+
+```{r cars}
+
+# Data test
+
+data <- cars
+
+# Lm test
+
+lm1 <- lm(speed ~ dist, data=data)
+
+```
+
+## Proc content
+
+Data content
+
+```{r}
+
+Proc.content(data)
+
+```
+
+## Proc.summary
+
+Data summary
+
+```{r}
+
+Proc.summary(data)
+
+```
+
+## Proc.reg.table
+
+Regression table
+
+```{r}
+
+Proc.reg.table(lm1)
+
+```
+
+## Proc.reg.anova
+
+Anova
+
+```{r}
+
+Proc.reg.anova(lm1)
+
+```
+
+## Proc.reg.confint
+
+Confidence intervals
+
+```{r}
+
+Proc.reg.confint(lm1)
+
+```
+
+## Proc.reg.durbin
+
+```{r}
+
+Proc.reg.durbin(lm1)
+
+```
+
+## Proc.reg.pagan
+
+Pagan test
+
+```{r}
+
+Proc.reg.pagan(lm1)
+
+```
+
+## Proc.reg.reset
+
+Reset test
+
+```{r}
+
+Proc.reg.reset(lm1)
+
+```
+
+## Proc.reg.white
+
+White test
+
+```{r}
+
+Proc.reg.white(lm1)
+
+```
+
+## Proc.reg.vifs
+
+Vifs plots
+
+```{r}
+
+Proc.reg.vifs(lm1)
+
+```
+
+#---

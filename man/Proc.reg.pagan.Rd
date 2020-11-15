@@ -16,5 +16,5 @@ returns a summary table of Breusch-Pagan test
 Summary table of Breusch-Pagan test
 }
 \examples{
-Proc.reg.pagan(lm)
+\dontrun{Proc.reg.pagan(lm)}
 }

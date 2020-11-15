@@ -16,5 +16,5 @@ returns a numeric and categoric summary table a dataset
 Summary table of a dataset
 }
 \examples{
-Proc.summary(lm)
+\dontrun{Proc.summary(df)}
 }

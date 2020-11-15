@@ -16,5 +16,5 @@ returns a summary table of the confidence intervals from the paraters calculated
 Summary table of a linear model
 }
 \examples{
-Proc.reg.confint(lm)
+\dontrun{Proc.reg.confint(lm)}
 }

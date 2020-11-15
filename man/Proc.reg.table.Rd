@@ -16,5 +16,5 @@ returns a summary table of a linear model
 Summary table of a linear model
 }
 \examples{
-Proc.reg.table(lm)
+\dontrun{Proc.reg.table(lm)}
 }

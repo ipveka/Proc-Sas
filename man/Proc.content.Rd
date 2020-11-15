@@ -16,5 +16,5 @@ returns a content table
 Content table
 }
 \examples{
-Proc.content(df)
+\dontrun{Proc.content(df)}
 }

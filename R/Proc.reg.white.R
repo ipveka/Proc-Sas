@@ -3,7 +3,8 @@
 #' @param lm A lm() object
 #' @return returns a summary table of the White test
 #' @examples
-#' Proc.reg.white(lm)
+#' \dontrun{Proc.reg.white(lm)}
+#' @export
 
 Proc.reg.white <- function(lm){
    a <- lm
@@ -14,6 +15,7 @@ Proc.reg.white <- function(lm){
    LM <- nrow(data)*Ru2
    p.value <- 1-pchisq(LM, 2)
    t <- data.frame(LM,p.value)
+   t <- t %>% dplyr::mutate_if(is.numeric, round, digits = 3)
    colnames(t) <- c("Statistic","P-value")
    datatable(t, rownames=FALSE,
              options = list(dom = 't',ordering=F, columnDefs = list(

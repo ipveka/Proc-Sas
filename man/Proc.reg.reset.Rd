@@ -16,5 +16,5 @@ returns a summary table of the Reset test
 Summary table of the Reset test
 }
 \examples{
-Proc.reg.reset(lm)
+\dontrun{Proc.reg.reset(lm)}
 }

@@ -3,7 +3,8 @@
 #' @param lm A data.frame() object
 #' @return returns a numeric and categoric summary table a dataset
 #' @examples
-#' Proc.summary(lm)
+#' \dontrun{Proc.summary(df)}
+#' @export
 
 Proc.summary <- function(x){
    c <- data.frame(Statistic=c("Min.","1st Qu.","Median","Mean","3rd Qu.","Max."))

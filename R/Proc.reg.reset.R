@@ -3,7 +3,8 @@
 #' @param lm A lm() object
 #' @return returns a summary table of the Reset test
 #' @examples
-#' Proc.reg.reset(lm)
+#' \dontrun{Proc.reg.reset(lm)}
+#' @export
 
 ### RESET table:
 
@@ -21,6 +22,7 @@ Proc.reg.reset <- function(lm){
    pval <- c(a2,b2,c2)
    form <- c("2","3","4")
    df <- data.frame(form,stats,pval)
+   df <- df %>% dplyr::mutate_if(is.numeric, round, digits = 3)
    colnames(df) <- c("Term","Statistic","P-value")
    datatable(df, rownames=FALSE,
              options = list(dom = 't',ordering=F, columnDefs = list(

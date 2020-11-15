@@ -16,5 +16,5 @@ returns a summary table of the White test
 Summary table of the White test
 }
 \examples{
-Proc.reg.white(lm)
+\dontrun{Proc.reg.white(lm)}
 }

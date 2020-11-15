@@ -16,5 +16,5 @@ Returns a graphic of Vifs from a linear model
 Plot of Vifs from a linear model
 }
 \examples{
-Proc.reg.vifs(lm)
+\dontrun{Proc.reg.vifs(lm)}
 }
