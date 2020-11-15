@@ -130,14 +130,4 @@ Proc.reg.white(lm1)
 
 ```
 
-## Proc.reg.vifs
-
-Vifs plots
-
-```{r}
-
-Proc.reg.vifs(lm1)
-
-```
-
 #---
